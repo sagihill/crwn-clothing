@@ -22,6 +22,11 @@
 		border: 1px solid black;
 	}
 
+	&:focus {
+		outline: none;
+		box-shadow: none !important;
+	}
+
 	&.google-sign-in {
 		background-color: #4285f4;
 		color: white;
