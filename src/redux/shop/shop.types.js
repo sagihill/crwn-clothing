@@ -1,0 +1,4 @@
+export const ShopActionTypes = {
+	UPDATE_COLLECTIONS: "UPDATE_COLLECTIONS",
+	SET_LOADED: "SET_LOADED",
+};

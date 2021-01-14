@@ -7,18 +7,15 @@ import Header from "./components/header/header.component.jsx";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component.jsx";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
-import CheckoutPage from "./pages/checkout/checkout.component.jsx"
+import CheckoutPage from "./pages/checkout/checkout.component.jsx";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 import { auth, createUserProfileDoc } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
-
-
 
 class App extends React.Component {
 	unsubscribeFromAuth = null;
